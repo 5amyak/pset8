@@ -1,0 +1,41 @@
+[22-Dec-2016 13:44:28 UTC] PHP Fatal error:  SQLSTATE[28000] [1045] Access denied for user 'TODO'@'localhost' (using password: YES) in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 313
+[23-Dec-2016 13:48:02 UTC] PHP Fatal error:  Class 'CS50' not found in /home/ubuntu/workspace/pset8/bin/import on line 12
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 3 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 4 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 5 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 6 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 7 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 8 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 9 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 10 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 11 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Notice:  Undefined offset: 12 in /home/ubuntu/workspace/pset8/bin/import on line 16
+[23-Dec-2016 13:49:28 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 3 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 4 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 5 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 6 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 7 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 8 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 9 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 10 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 11 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Notice:  Undefined offset: 12 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:51:15 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 13:52:41 UTC] PHP Notice:  Undefined offset: 12 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 13:52:41 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 15:10:15 UTC] PHP Notice:  Undefined offset: 12 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 15:10:15 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 15:10:31 UTC] PHP Notice:  Undefined offset: 12 in /home/ubuntu/workspace/pset8/bin/import on line 18
+[23-Dec-2016 15:10:31 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 15:12:46 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 15:14:40 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 15:14:43 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 15:17:46 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 15:19:05 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
+[23-Dec-2016 15:39:28 UTC] PHP Notice:  Undefined variable: handle in /home/ubuntu/workspace/pset8/bin/import on line 19
+[23-Dec-2016 15:39:28 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/pset8/bin/import on line 19
