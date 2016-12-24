@@ -39,3 +39,4 @@
 [23-Dec-2016 15:19:05 UTC] PHP Fatal error:  Too few placeholders in query in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 331
 [23-Dec-2016 15:39:28 UTC] PHP Notice:  Undefined variable: handle in /home/ubuntu/workspace/pset8/bin/import on line 19
 [23-Dec-2016 15:39:28 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home/ubuntu/workspace/pset8/bin/import on line 19
+[24-Dec-2016 08:51:21 UTC] PHP Fatal error:  Can't find FULLTEXT index matching the column list in /home/ubuntu/workspace/pset8/vendor/library50-php-5/CS50/CS50.php on line 352
