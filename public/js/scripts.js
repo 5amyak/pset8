@@ -74,7 +74,33 @@ $(function() {
  */
 function addMarker(place)
 {
+    var image = 'http://maps.google.com/mapfiles/ms/micons/info_circle.png';
     
+    var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(place.latitude,place.longitude),
+    map: map,
+    icon: image,
+    title: place.place_name.toString()
+    });
+    
+    var content = "<ul>";
+    var i;
+    var parameters = {
+        geo: place.postal_code
+    };
+    $.getJSON("articles.php", parameters)
+    .done(function(json) {
+        
+        for(i = 0; i < json.length; i++)
+            content += "<li><a href=" + json[i].link + ">" + json[i].title + "</a>";
+    })
+    .fail(function(jqXHR, textStatus, errorThrown) {
+
+        // log error to browser's console
+        console.log(errorThrown.toString());
+    });
+    content += "</ul>";
+    //marker.addListener('click', showInfo(marker, content));
 }
 
 /**
