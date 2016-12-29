@@ -85,6 +85,7 @@ function addMarker(place)
     marker.addListener('click', function() {
     showInfo(marker, content);
     });
+    markers.push(marker);
     
     var content = "<strong>" + place.place_name.toString() + ", " + place.admin_name1.toString() + "<\strong><ul>";
     var i;
@@ -188,7 +189,10 @@ function hideInfo()
  */
 function removeMarkers()
 {
-    // TODO
+    var i;
+    for (i = 0; i < markers.length; i++)
+        markers[i].setMap(null);
+    markers.length = 0;
 }
 
 /**
