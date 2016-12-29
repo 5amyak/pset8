@@ -80,27 +80,30 @@ function addMarker(place)
     position: new google.maps.LatLng(place.latitude,place.longitude),
     map: map,
     icon: image,
-    title: place.place_name.toString()
+    title: place.postal_code.toString()
+    });
+    marker.addListener('click', function() {
+    showInfo(marker, content);
     });
     
-    var content = "<ul>";
+    var content = "<strong>" + place.place_name.toString() + ", " + place.admin_name1.toString() + "<\strong><ul>";
     var i;
     var parameters = {
         geo: place.postal_code
-    };
+        };
     $.getJSON("articles.php", parameters)
     .done(function(json) {
-        
         for(i = 0; i < json.length; i++)
             content += "<li><a href=" + json[i].link + ">" + json[i].title + "</a>";
-    })
+            
+        content += "</ul>";
+        })
     .fail(function(jqXHR, textStatus, errorThrown) {
 
         // log error to browser's console
         console.log(errorThrown.toString());
     });
-    content += "</ul>";
-    //marker.addListener('click', showInfo(marker, content));
+    
 }
 
 /**
@@ -232,9 +235,10 @@ function showInfo(marker, content)
 
     // set info window's content
     info.setContent(div);
-
-    // open info window (if not already open)
+    
+    //display
     info.open(map, marker);
+
 }
 
 /**
