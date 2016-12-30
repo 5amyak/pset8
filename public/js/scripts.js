@@ -24,26 +24,75 @@ $(function() {
     // styles for map
     // https://developers.google.com/maps/documentation/javascript/styling
     var styles = [
-
-        // hide Google's labels
-        {
-            featureType: "all",
-            elementType: "labels",
-            stylers: [
-                {visibility: "off"}
-            ]
-        },
-
-        // hide roads
-        {
-            featureType: "road",
-            elementType: "geometry",
-            stylers: [
-                {visibility: "off"}
-            ]
-        }
-
-    ];
+              {
+                "featureType": "administrative",
+                "stylers": [
+                  {
+                    "visibility": "simplified"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.land_parcel",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.neighborhood",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "labels",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "labels",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit",
+                "elementType": "labels",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              }
+        ];
 
     // options for map
     // https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -86,7 +135,7 @@ function addMarker(place)
     showInfo(marker, content);
     });
     markers.push(marker);
-    
+        
     var content = "<strong>" + place.place_name.toString() + ", " + place.admin_name1.toString() + "<\strong><ul>";
     var i;
     var parameters = {
@@ -151,7 +200,7 @@ function configure()
 
         // set map's center
         map.setCenter({lat: latitude, lng: longitude});
-
+        
         // update UI
         update();
     });
@@ -272,6 +321,9 @@ function update()
         {
             addMarker(data[i]);
         }
+         var markerCluster = new MarkerClusterer(map, markers,
+        {imagePath: '../img/m'});
+
      })
      .fail(function(jqXHR, textStatus, errorThrown) {
 
