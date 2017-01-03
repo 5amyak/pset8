@@ -123,8 +123,10 @@ $(function() {
  */
 function addMarker(place)
 {
+    //image to be displayed as marker
     var image = 'http://maps.google.com/mapfiles/ms/micons/info_circle.png';
     
+    //adds marker on map with listener
     var marker = new google.maps.Marker({
     position: new google.maps.LatLng(place.latitude,place.longitude),
     map: map,
@@ -135,7 +137,8 @@ function addMarker(place)
     showInfo(marker, content);
     });
     markers.push(marker);
-        
+    
+    //content to be displayed on the info window of the marker
     var content = "<strong>" + place.place_name.toString() + ", " + place.admin_name1.toString() + "<\strong><ul>";
     var i;
     var parameters = {
@@ -241,6 +244,7 @@ function removeMarkers()
     var i;
     for (i = 0; i < markers.length; i++)
         markers[i].setMap(null);
+    //deletes marker
     markers.length = 0;
 }
 
@@ -321,7 +325,9 @@ function update()
         {
             addMarker(data[i]);
         }
-         var markerCluster = new MarkerClusterer(map, markers,
+        
+        //PERSONAL TOUCH : "Groups Markers"
+        var markerCluster = new MarkerClusterer(map, markers,
         {imagePath: '../img/m'});
 
      })
